@@ -1,4 +1,4 @@
-# [@fav/type.is-valid-date][repo-url] [![NPM version][npm-img]][npm-url] [![MIT License][mit-img]][mit-url] [![Build Status][travis-img]][travis-url] [![Build Status][appveyor-img]][appveyor-url]
+# [@fav/type.is-valid-date][repo-url] [![NPM version][npm-img]][npm-url] [![MIT License][mit-img]][mit-url] [![Build Status][travis-img]][travis-url] [![Build Status][appveyor-img]][appveyor-url] [![Coverage status][coverage-img]][coverage-url]
 
 Checks whether a value is a valid date object or not.
 
@@ -119,3 +119,5 @@ See the file LICENSE in this distribution for more details.
 [travis-url]: https://travis-ci.org/sttk/fav-type.is-valid-date
 [appveyor-img]: https://ci.appveyor.com/api/projects/status/github/sttk/fav-type.is-valid-date?branch=master&svg=true
 [appveyor-url]: https://ci.appveyor.com/project/sttk/fav-type-is-valid-date
+[coverage-img]: https://coveralls.io/repos/github/sttk/fav-type.is-valid-date/badge.svg?branch=master
+[coverage-url]: https://coveralls.io/github/sttk/fav-type.is-valid-date?branch=master
