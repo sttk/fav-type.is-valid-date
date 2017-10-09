@@ -1,5 +1,5 @@
 {
-  "name": "fav-type.is-valid-date",
+  "name": "@fav/type.is-valid-date",
   "version": "0.7.0",
   "description": "Checks whether a value is a valid date object or not.",
   "main": "index.js",
