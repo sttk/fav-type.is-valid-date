@@ -6,6 +6,7 @@ Checks whether a value is a valid date object or not.
 > This package is intended to support all Node.js versions and many browsers as possible.
 > At least, this package supports Node.js >= v0.10 and major Web browsers: Chrome, Firefox, IE11, Edge, Vivaldi and Safari.
 
+
 ## Install
 
 To install from npm:
@@ -14,7 +15,8 @@ To install from npm:
 $ npm install --save @fav/type.is-valid-date
 ```
 
-***NOTE:*** *npm < 2.7.0 does not support scoped package, but even old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/type.is-valid-date/` direcotry manually.*
+***NOTE:*** *npm < 2.7.0 does not support scoped package, but even old version Node.js supports it. So when you use such older npm, you should download this package from [github.com][repo-url], and move it in `node_modules/@fav/type.is-valid-date/` directory manually.*
+
 
 ## Usage
 
@@ -24,6 +26,9 @@ For Node.js, when installing `@fav/type.is-valid-date` from npm:
 var isValidDate = require('@fav/type.is-valid-date');
 isValidDate(new Date(2017, 8, 30)); // => true
 isValidDate(new Date(9999999999, 1, 1)); // => false
+
+isValidDate.not(new Date(2017, 8, 30)); // => false
+isValidDate.not(new Date(9999999999, 1, 1)); // => true
 ```
 
 Or when installing `fav-type.is-valid-date` from github:
@@ -31,6 +36,7 @@ Or when installing `fav-type.is-valid-date` from github:
 ```js
 var isValidDate = require('fav-type.is-valid-date');
 isValidDate(new Date(2017, 8, 30)); // => true
+isValidDate.not(new Date(2017, 8, 30)); // => false
 ```
 
 For Web browsers:
@@ -40,6 +46,7 @@ For Web browsers:
 <script>
 var isValidDate = fav.type.isValidDate;
 isValidDate(new Date(2017, 8, 30)); // => true
+isValidDate.not(new Date(2017, 8, 30)); // => false
 </script>
 ```
 
@@ -59,6 +66,25 @@ Checks if *value* is a valid date object.
 #### Return:
 
 True, if *value* is a valid date.
+
+**Type:** boolean
+
+
+### <u>isValidDate.not(value) : boolean</u>
+
+Checks if *value* is not a valid date object.
+
+This function always returns a negative boolean of `isValidDate(value)`.
+
+#### Parameter:
+
+| Parameter |  Type  | Description              |
+|-----------|:------:|--------------------------|
+| value     | *any*  | The value to be checked. |
+
+#### Return:
+
+True, if *value* is not a valid date.
 
 **Type:** boolean
 
