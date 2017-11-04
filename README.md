@@ -20,7 +20,7 @@ $ npm install --save @fav/type.is-valid-date
 
 ## Usage
 
-For Node.js, when installing `@fav/type.is-valid-date` from npm:
+For Node.js:
 
 ```js
 var isValidDate = require('@fav/type.is-valid-date');
