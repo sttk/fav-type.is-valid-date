@@ -1,6 +1,6 @@
 {
   "name": "@fav/type.is-valid-date",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "Checks whether a value is a valid date object or not.",
   "main": "index.js",
   "files": [
